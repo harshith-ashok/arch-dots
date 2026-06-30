@@ -1,0 +1,27 @@
+[font]
+normal.family = "Terminess Nerd Font"
+size = 8
+
+# [font.bold]
+# family = "ZedMono Ner"
+# style = "Regular"
+#
+# [font.italic]
+# family = "scientifica"
+# style = "Regular"
+#
+[font.glyph_offset]
+x = 1
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = ["-l"]
+
+
+[window]
+padding.x = 10
+padding.y = 10
+
+[general]
+
+import = ["~/.config/alacritty/gruvbox.toml"]
