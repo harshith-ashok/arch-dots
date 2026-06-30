@@ -70,6 +70,7 @@ bindsym $mod+x exec --no-startup-id ~/.config/rofi/powermenu/type-1/powermenu.sh
 # start a terminal
 bindsym $mod+Return exec alacritty 
 bindsym $mod+e exec helium-browser
+bindsym $mod+n exec nemo
 
 # kill focused window
 bindsym $mod+q kill
