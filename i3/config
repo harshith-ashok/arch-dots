@@ -39,13 +39,18 @@ exec --no-startup-id exec polybar -c ~/.config/polybar/config.ini
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec --no-startup-id xinput set-prop 8 "libinput Natural Scrolling Enabled" 1
+exec --no-startup-id xrandr | grep -q "HDMI-1 connected" && xrandr --output HDMI-1 --mode 1920x1080 --rate 165 --output eDP-1 --off || xrandr --output eDP-1 --auto --output HDMI-1 --off
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

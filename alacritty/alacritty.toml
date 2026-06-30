@@ -1,6 +1,6 @@
 [font]
-normal.family = "Terminess Nerd Font"
-size = 8
+normal.family = "UbuntuMono Nerd Font"
+size = 10
 
 # [font.bold]
 # family = "ZedMono Ner"
@@ -24,4 +24,4 @@ padding.y = 10
 
 [general]
 
-import = ["~/.config/alacritty/gruvbox.toml"]
+import = ["~/.config/alacritty/ayu_light.toml"]
