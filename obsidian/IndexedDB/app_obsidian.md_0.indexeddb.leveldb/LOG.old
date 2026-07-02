@@ -1,2 +1,3 @@
-2026/06/30-11:06:14.577 38a2 Creating DB /home/harshith/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb since it was missing.
-2026/06/30-11:06:14.581 38a2 Reusing MANIFEST /home/harshith/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/02-12:40:24.536 166e Reusing MANIFEST /home/harshith/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2026/07/02-12:40:24.536 166e Recovering log #4
+2026/07/02-12:40:24.539 166e Reusing old log /home/harshith/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000004.log 
